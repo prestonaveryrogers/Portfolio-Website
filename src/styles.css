@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    height: 100%;
+  }
+  
+  .container {
+    display: flex;
+    height: 100vh; /* Make the container full screen */
+  }
+  
+  .navbar {
+    width: 200px;
+    background: #333;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    height: 100vh; /* Extend navbar to full height */
+    align-items: center; /* Center items */
+  }
+  
+  /* Show the left side of the image */
+  .navbar-photo-container {
+    width: 140px; /* Set the size of the container */
+    height: 140px; /* Set the size of the container */
+    border-radius: 50%; /* Make the container circular */
+    overflow: hidden; /* Hide the overflowed image */
+    margin-bottom: 20px; /* Add space between the photo and text */
+  }
+  
+  .navbar-photo {
+    width: 100%; /* Make sure the image takes full width */
+    height: 100%; /* Make sure the image takes full height */
+    object-fit: cover; /* Make sure the image covers the circle */
+    object-position: bottom; /* Adjust what part of the image is visible */
+  }  
+  
+  .navbar h2 {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .navbar ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .navbar li {
+    margin: 10px 0;
+    text-align: center; /* Center the nav items */
+  }
+  
+  .content {
+    padding: 20px;
+    flex-grow: 1; /* Take up remaining space */
+    overflow-y: auto; /* Make sure content scrolls if it overflows */
+  }
+  

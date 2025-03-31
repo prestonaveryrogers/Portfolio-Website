@@ -1,0 +1,26 @@
+import React from "react";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import AboutMe from "./pages/AboutMe";
+import MastersProjects from "./pages/MastersProjects";
+import NasaProjects from "./pages/NasaProjects";
+
+const App = () => {
+  return (
+    <Router>
+      <div className="container">
+        <Navbar />
+        <div className="content">
+          <Routes>
+            <Route path="/" element={<AboutMe />} />
+            <Route path="/masters-projects" element={<MastersProjects />} />
+            <Route path="/nasa-projects" element={<NasaProjects />} />
+          </Routes>
+        </div>
+      </div>
+    </Router>
+  );
+};
+
+export default App;
+
