@@ -1,8 +1,13 @@
 import React from "react";
+import '../styles/NasaProjects.css'; // Make sure to import your CSS file
 
 const NasaProjects = () => {
   return (
     <div>
+      <header className="nasa-header">
+        <img src="/pictures/nasa_projects_logo.png" className="nasa-logo" />
+      </header>
+
       <h1>NASA Projects</h1>
       <p>Here are some video clips from my work with NASA:</p>
 

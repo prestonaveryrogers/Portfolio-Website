@@ -1,0 +1,12 @@
+  .nasa-header {
+    text-align: center; /* Center the logo */
+    margin-bottom: 30px; /* Space below the logo */
+  }
+  
+  .nasa-logo {
+    width: 600px; /* Adjust the width of the logo */
+    height: auto; /* Keep aspect ratio intact */
+    display: block; /* Make the image block-level to center it */
+    margin: 0 auto; /* Center the image horizontally */
+  }
+  

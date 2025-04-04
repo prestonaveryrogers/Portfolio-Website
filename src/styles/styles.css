@@ -13,24 +13,28 @@
     height: 100vh; /* Make the container full screen */
   }
   
+  /* Navigation Bar stuff */
   .navbar {
     width: 200px;
     min-width: 200px; /* Ensures it doesn’t shrink */
     max-width: 200px; /* Prevents it from growing */
-    background: #333;
+    background-image: url('../../public/pictures/earth_at_night.jpg');
+
     color: white;
     padding: 20px 0; /* Remove horizontal padding */
     position: relative; /* Key for absolute positioning */
+    font-family: 'Helvetica', sans-serif;
   }
   
   /* Show the left side of the image */
   .navbar-photo-container {
-    width: 140px; /* Set the size of the container */
-    height: 140px; /* Set the size of the container */
+    width: 160px; /* Set the size of the container */
+    height: 160px; /* Set the size of the container */
     border-radius: 50%; /* Make the container circular */
     overflow: hidden; /* Hide the overflowed image */
     margin: 0 auto;
     margin-bottom: 20px; /* Add space between the photo and text */
+    border: 6px solid white; /* Add a white border around the photo */
   }
   
   .navbar-photo {
@@ -62,7 +66,7 @@
     content: "";
     display: block;
     height: 1px;
-    background-color: lightgray;
+    background-color: white;
     width: 100%;
   }
   
@@ -70,7 +74,7 @@
     content: "";
     display: block;
     height: 1px;
-    background-color: lightgray;
+    background-color: white;
     width: 100%;
   }
 
@@ -78,7 +82,7 @@
     content: "";
     display: block;
     height: 1px;
-    background-color: lightgray;
+    background-color: white;
     width: 100%;
   }
   
@@ -92,7 +96,7 @@
   }
   
   .navbar li a:hover {
-    background-color: #444; /* Slightly lighter background on hover */
+    background-color: #e4002a9a; /* Slightly lighter background on hover */
   }
   
   /* Blue vertical line on hover */
@@ -102,13 +106,13 @@
     top: 0;
     bottom: 0;
     right: 0;
-    width: 5px;
+    width: 8px;
     background-color: transparent;
     transition: background-color 0.3s;
   }
   
   .navbar li a:hover::after {
-    background-color: #00bfff; /* Thin blue line when hovered */
+    background-color: #5d91ff; /* Thin blue line when hovered */
   }
   
 
