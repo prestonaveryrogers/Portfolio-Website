@@ -3,7 +3,7 @@
   .about-me {
     position: relative;
     height: 100vh; /* Full height */
-    background-image: url('../../public/niseko_snowboarding.jpg'); /* Replace with the image path */
+    background-image: url('../../public/pictures/niseko_snowboarding.jpg'); /* Replace with the image path */
     background-position: center center;
     background-size: cover;
     background-attachment: fixed; /* Parallax effect */

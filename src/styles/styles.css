@@ -15,13 +15,12 @@
   
   .navbar {
     width: 200px;
+    min-width: 200px; /* Ensures it doesn’t shrink */
+    max-width: 200px; /* Prevents it from growing */
     background: #333;
     color: white;
-    padding: 20px;
-    display: flex;
-    flex-direction: column; /* Stack items vertically */
-    height: 100vh; /* Extend navbar to full height */
-    align-items: center; /* Center items */
+    padding: 20px 0; /* Remove horizontal padding */
+    position: relative; /* Key for absolute positioning */
   }
   
   /* Show the left side of the image */
@@ -30,6 +29,7 @@
     height: 140px; /* Set the size of the container */
     border-radius: 50%; /* Make the container circular */
     overflow: hidden; /* Hide the overflowed image */
+    margin: 0 auto;
     margin-bottom: 20px; /* Add space between the photo and text */
   }
   
@@ -48,13 +48,70 @@
   .navbar ul {
     list-style: none;
     padding: 0;
+    margin: 0;
   }
   
   .navbar li {
-    margin: 10px 0;
-    text-align: center; /* Center the nav items */
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: 100%;
   }
   
+  .navbar li:not(:last-child)::after {
+    content: "";
+    display: block;
+    height: 1px;
+    background-color: lightgray;
+    width: 100%;
+  }
+  
+  .navbar li:first-child::before {
+    content: "";
+    display: block;
+    height: 1px;
+    background-color: lightgray;
+    width: 100%;
+  }
+
+  .navbar li::after {
+    content: "";
+    display: block;
+    height: 1px;
+    background-color: lightgray;
+    width: 100%;
+  }
+  
+  .navbar li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    position: relative;
+    transition: background-color 0.3s;
+  }
+  
+  .navbar li a:hover {
+    background-color: #444; /* Slightly lighter background on hover */
+  }
+  
+  /* Blue vertical line on hover */
+  .navbar li a::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 5px;
+    background-color: transparent;
+    transition: background-color 0.3s;
+  }
+  
+  .navbar li a:hover::after {
+    background-color: #00bfff; /* Thin blue line when hovered */
+  }
+  
+
   .content {
     padding: 20px;
     flex-grow: 1; /* Take up remaining space */
