@@ -1,12 +1,12 @@
 import React from 'react';
-import '../styles/AboutMe.css'; // Make sure to import your CSS file
+import '../styles/AboutMe.css'; 
 
 const AboutMe = () => {
   return (
     <div className="about-me">
-      {/* Text overlay */}
-      <div className="about-me-text">
-        About Me
+      {/* Background image section */}
+      <div className="about-me-hero">
+        <div className="about-me-text">About Me</div>
       </div>
 
       {/* Content below the image */}
@@ -14,13 +14,21 @@ const AboutMe = () => {
         <p>
           Here is some content about yourself. As you scroll down, the text will scroll up, and the background image will scroll at a slower rate.
         </p>
-        {/* Add more content as needed */}
+
+        <div className="waterborne-skate-video">
+          <img
+            src="/pictures/waterborne_skating.gif" // <-- adjust path as needed
+            alt="Waterborne skate animation"
+            style={{ width: '25%', height: 'auto' }}
+          />
+        </div>
       </div>
 
-      {/* The red bar */}
+      {/* Red bar */}
       <div className="red-bar"></div>
     </div>
   );
 };
+
 
 export default AboutMe;

@@ -11,6 +11,8 @@
   .container {
     display: flex;
     height: 100vh; /* Make the container full screen */
+    margin: 0;
+    padding: 0;
   }
   
   /* Navigation Bar stuff */
@@ -18,11 +20,14 @@
     width: 200px;
     min-width: 200px; /* Ensures it doesn’t shrink */
     max-width: 200px; /* Prevents it from growing */
+    height: 100vh; /* Make the navbar stretch the full height of the viewport */
     background-image: url('../../public/pictures/earth_at_night.jpg');
-
     color: white;
     padding: 20px 0; /* Remove horizontal padding */
+    margin: 0;
     position: relative; /* Key for absolute positioning */
+    font-weight: bold;
+    font-size: 16px;
     font-family: 'Helvetica', sans-serif;
   }
   
@@ -41,7 +46,7 @@
     width: 100%; /* Make sure the image takes full width */
     height: 100%; /* Make sure the image takes full height */
     object-fit: cover; /* Make sure the image covers the circle */
-    object-position: bottom; /* Adjust what part of the image is visible */
+    object-position: 25% 75%;; /* Adjust what part of the image is visible */
   }  
   
   .navbar h2 {
@@ -93,6 +98,7 @@
     color: white;
     position: relative;
     transition: background-color 0.3s;
+    backdrop-filter: blur(2px); /* Apply a slight blur effect */
   }
   
   .navbar li a:hover {
@@ -117,7 +123,7 @@
   
 
   .content {
-    padding: 20px;
+    padding: 0;
     flex-grow: 1; /* Take up remaining space */
     overflow-y: auto; /* Make sure content scrolls if it overflows */
   }
