@@ -8,28 +8,33 @@ const Resume = () => {
       {/* Header Section */}
       <header className="resume-header">
         <h1 className="resume-title">Résumé</h1>
-        <p className="resume-subtitle">Robotics Technologist · NASA JPL</p>
-        <a
-          href="/docs/Preston_Rogers_Resume.pdf"
-          download="Preston_Rogers_Resume.pdf"
-          className="resume-download-button"
-        >
-          <span className="download-icon">⬇</span> Download PDF
-        </a>
       </header>
 
-      {/* PDF Preview Section */}
-      <div className="resume-content">
-        <div className="resume-preview-container">
-          <div className="resume-preview">
-            <iframe
-              src="/docs/Preston_Rogers_Resume.pdf#view=FitH"
-              width="100%"
-              height="100%"
-              title="Preston Rogers Résumé"
-              className="resume-iframe"
-            />
+      {/* Resume Card */}
+      <div className="resume-card">
+        <div className="resume-card-header">
+          <div className="resume-info">
+            <h2>Preston Rogers</h2>
+            <p className="resume-subtitle">Robotics Technologist · NASA JPL</p>
           </div>
+          <a
+            href="/docs/Preston_Rogers_Resume.pdf"
+            download="Preston_Rogers_Resume.pdf"
+            className="resume-download-button"
+          >
+            Download PDF →
+          </a>
+        </div>
+
+        {/* PDF Preview Section */}
+        <div className="resume-preview-container">
+          <iframe
+            src="/docs/Preston_Rogers_Resume.pdf#view=FitH"
+            width="100%"
+            height="100%"
+            title="Preston Rogers Résumé"
+            className="resume-iframe"
+          />
         </div>
       </div>
 

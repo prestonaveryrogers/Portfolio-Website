@@ -31,6 +31,7 @@ const MastersProjects = () => {
 
             <div className="project-visual">
               <img src="/pictures/convex_heuristics.png" alt="Convex Heuristics Visualization" />
+              <p className="image-caption">Simulated robotic agent navigating obstacle field using convex optimization for path planning</p>
             </div>
           </div>
 
@@ -46,11 +47,7 @@ const MastersProjects = () => {
           <h2>Rigid Body Control Via Muscle Activity Interpretation</h2>
           <p className="project-meta">Machine Learning & Biomedical Engineering</p>
 
-          <div className="project-layout project-layout-reverse">
-            <div className="project-visual">
-              <img src="/pictures/robot_arm_ml.png" alt="EEG-based Robot Control" />
-            </div>
-
+          <div className="project-layout">
             <div className="project-text">
               <p>
                 Addressing the lack of dexterity in post-amputation prosthetics through non-invasive AI-based control systems.
@@ -63,6 +60,11 @@ const MastersProjects = () => {
                   <li><strong>Impact:</strong> Restores dexterity and improves quality of life for amputees</li>
                 </ul>
               </div>
+            </div>
+
+            <div className="project-visual">
+              <img src="/pictures/robot_arm_ml.png" alt="EEG-based Robot Control" />
+              <p className="image-caption">EMG signal classification for robotic arm control (K-means clustering visualization)</p>
             </div>
           </div>
 
@@ -96,6 +98,7 @@ const MastersProjects = () => {
 
             <div className="project-visual">
               <img src="/pictures/neural_network_copycat.png" alt="Neural Network MPC Architecture" />
+              <p className="image-caption">MPC-guided trajectory planning for autonomous navigation with out-of-distribution detection</p>
             </div>
           </div>
 
