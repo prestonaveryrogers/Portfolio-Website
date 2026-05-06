@@ -114,8 +114,6 @@
 
 .edu-item {
   margin-bottom: 30px;
-  padding-left: 20px;
-  border-left: 3px solid #0B3D91;
 }
 
 .edu-item h3 {
@@ -150,7 +148,7 @@
   padding: 20px;
   background: #f9f9f9;
   border-radius: 6px;
-  border-left: 4px solid #0B3D91;
+  border-top: 2px solid #0B3D91;
 }
 
 .exp-header {

@@ -9,7 +9,7 @@ const MastersProjects = () => {
       </header>
 
       {/* Convex Heuristics Project */}
-      <div className="project-card">
+      <div className="masters-project-card">
         <div className="project-content">
           <h2>Convex Heuristics for Limb Placement and Navigation</h2>
           <p className="project-meta">Robotics & Control Systems</p>
@@ -42,7 +42,7 @@ const MastersProjects = () => {
       </div>
 
       {/* Robot Arm Project */}
-      <div className="project-card">
+      <div className="masters-project-card">
         <div className="project-content">
           <h2>Rigid Body Control Via Muscle Activity Interpretation</h2>
           <p className="project-meta">Machine Learning & Biomedical Engineering</p>
@@ -75,7 +75,7 @@ const MastersProjects = () => {
       </div>
 
       {/* Neural Network Copycat Project */}
-      <div className="project-card">
+      <div className="masters-project-card">
         <div className="project-content">
           <h2>Deep Neural Network with Confidence Measure as MPC Copycat</h2>
           <p className="project-meta">Control Theory & Deep Learning</p>
