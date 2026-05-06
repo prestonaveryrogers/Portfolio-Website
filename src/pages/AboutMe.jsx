@@ -19,7 +19,7 @@ const AboutMe = () => {
           <img
             src="/pictures/waterborne_skating.gif" // <-- adjust path as needed
             alt="Waterborne skate animation"
-            style={{ width: '25%', height: 'auto' }}
+            style={{ width: '70%', height: 'auto' }}
           />
         </div>
       </div>

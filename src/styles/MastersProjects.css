@@ -1,0 +1,95 @@
+  .masters-header {
+    text-align: center;
+  }
+  
+  .masters-logo {
+    height: 300px;
+    position: flex;
+    z-index: 1000; /* ensure it stays above other content */
+    padding: 10px; /* optional: internal spacing if needed */
+  }
+  
+  .project-container::after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    position: flex;
+    bottom: -20px; /* space above the line */
+  }
+
+  .project-container {
+    font-size: 1.4rem; /* Adjust this value as needed */
+    display: flex;
+    margin-top: 40px;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding: 0 50px
+  }
+  
+  .project-description {
+    flex: 1;
+    font-family: 'Helvetica', sans-serif;
+    
+  }
+  .project-description h2 {
+    margin-bottom: 16px; /* or whatever value looks good */
+    text-align: center;
+  }
+  .project-description p {
+    text-align: justify;
+  }
+  
+  .project-description-with-image {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+  }
+  
+  .project-description-with-image p {
+    flex: 2;
+    text-align: justify;
+  }
+
+  .project-image-wrapper {
+    position: relative;
+    width: 100%;
+  }
+  
+  .project-image-wrapper img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+  }
+  
+  .read-more-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 8px 16px;
+    border: 2px solid black;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 0.9rem;
+  }
+  
+
+  
+  .project-images {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+  
+  .project-images img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
