@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar";
 import AboutMe from "./pages/AboutMe";
 import MastersProjects from "./pages/MastersProjects";
 import NasaProjects from "./pages/NasaProjects";
+import Publications from "./pages/Publications";
 import Resume from "./pages/Resume";
 
 const App = () => {
@@ -16,7 +17,7 @@ const App = () => {
             <Route path="/" element={<AboutMe />} />
             <Route path="/masters-projects" element={<MastersProjects />} />
             <Route path="/nasa-projects" element={<NasaProjects />} />
-            <Route path="/publications" element={<NasaProjects />} />
+            <Route path="/publications" element={<Publications />} />
             <Route path="/resume" element={<Resume />} />
           </Routes>
         </div>
