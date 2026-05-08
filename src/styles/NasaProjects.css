@@ -1,80 +1,136 @@
+/* NASA Projects Page — Refined Aerospace Portfolio */
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700&display=swap');
+
+/* Page Background */
+.nasa-projects-page {
+  background: #f8f9fb;
+  min-height: 100%;
+  padding-bottom: 80px;
+}
+
 .nasa-header {
   text-align: center;
-  padding: 20px 0 30px 0;
+  padding: 40px 0 20px 0;
+  position: relative;
+}
+
+.nasa-header::after {
+  content: '';
+  display: block;
+  width: 120px;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #0B3D91, transparent);
+  margin: 24px auto 0;
 }
 
 .nasa-logo {
-  width: 400px;
+  width: 360px;
   height: auto;
   display: block;
   margin: 0 auto;
 }
 
-/* Project Card - Matching Publications/Masters style */
+/* Project Card */
 .project-card {
   max-width: 1100px;
-  margin: 50px auto;
-  padding: 50px 60px;
+  margin: 60px auto;
+  padding: 56px 64px;
   background: #ffffff;
-  border-top: 2px solid #0B3D91;
+  border-radius: 2px;
+  border: 1px solid #e8ecf0;
+  border-left: 3px solid #0B3D91;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04), 0 8px 24px rgba(11, 61, 145, 0.03);
+  position: relative;
+  transition: box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+.project-card:hover {
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06), 0 12px 32px rgba(11, 61, 145, 0.06);
+  transform: translateY(-1px);
 }
 
 .project-content h2 {
-  font-family: 'Helvetica', sans-serif;
-  font-size: 1.9rem;
-  color: #222;
-  margin-bottom: 10px;
-  font-weight: 500;
-  line-height: 1.3;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1.85rem;
+  color: #1a1a2e;
+  margin-bottom: 8px;
+  font-weight: 700;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
 }
 
 .project-meta {
-  color: #777;
-  font-size: 0.95rem;
-  font-weight: 600;
+  font-family: 'Space Mono', monospace;
+  color: #0B3D91;
+  font-size: 0.78rem;
+  font-weight: 400;
   text-transform: uppercase;
-  letter-spacing: 0.5px;
-  margin-bottom: 30px;
+  letter-spacing: 1.5px;
+  margin-bottom: 32px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eef1f5;
 }
 
-/* Project Layout - Side by side like Master's Projects */
+/* Project Layout - Side by side */
 .project-layout {
   display: flex;
-  gap: 50px;
+  gap: 48px;
   align-items: flex-start;
-  margin: 30px 0;
+  margin: 28px 0;
 }
 
 .project-text {
-  flex: 1.2;
-  font-family: 'Helvetica', sans-serif;
-  font-size: 1.05rem;
-  line-height: 1.7;
-  color: #333;
+  flex: 1.3;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1.02rem;
+  line-height: 1.75;
+  color: #374151;
 }
 
 .project-text > p {
-  margin-bottom: 24px;
-  text-align: justify;
+  margin-bottom: 22px;
+  text-align: left;
+}
+
+.project-text a {
+  color: #0B3D91;
+  text-decoration: none;
+  font-weight: 600;
+  border-bottom: 1px solid rgba(11, 61, 145, 0.3);
+  transition: border-color 0.2s ease, color 0.2s ease;
+}
+
+.project-text a:hover {
+  color: #FC3D21;
+  border-bottom-color: #FC3D21;
 }
 
 .project-text strong {
-  color: #222;
+  color: #1a1a2e;
   font-weight: 600;
 }
 
 /* Project Highlights */
 .project-highlights {
-  margin-top: 20px;
+  margin-top: 28px;
 }
 
 .project-highlights h3 {
-  font-size: 1rem;
-  color: #444;
-  margin-bottom: 12px;
-  font-weight: 600;
+  font-family: 'Space Mono', monospace;
+  font-size: 0.72rem;
+  color: #6b7280;
+  margin-bottom: 14px;
+  font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.5px;
+  letter-spacing: 2px;
+}
+
+.project-highlights > p {
+  margin-bottom: 14px;
+  font-size: 0.98rem;
+  color: #4b5563;
+  line-height: 1.7;
 }
 
 .project-highlights ul {
@@ -84,95 +140,115 @@
 }
 
 .project-highlights li {
-  margin-bottom: 10px;
-  padding-left: 20px;
+  margin-bottom: 12px;
+  padding-left: 18px;
   position: relative;
-  line-height: 1.6;
+  line-height: 1.65;
+  font-size: 0.98rem;
 }
 
 .project-highlights li:before {
-  content: "▸";
+  content: "";
   position: absolute;
   left: 0;
-  color: #0B3D91;
-  font-weight: bold;
+  top: 10px;
+  width: 6px;
+  height: 6px;
+  background: #0B3D91;
+  border-radius: 1px;
+  transform: rotate(45deg);
 }
 
 /* Project Visual - Image */
 .project-visual {
-  flex: 1;
+  flex: 0.9;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
+  position: sticky;
+  top: 20px;
 }
 
 .project-visual img {
   width: 100%;
   height: auto;
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
-  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e8ecf0;
+  transition: box-shadow 0.3s ease;
+}
+
+.project-visual img:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
 }
 
 .image-caption {
-  margin-top: 10px;
-  font-size: 0.9rem;
-  color: #666;
+  margin-top: 12px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.82rem;
+  color: #6b7280;
   font-style: italic;
   text-align: center;
+  line-height: 1.5;
+  max-width: 90%;
 }
 
 /* Video Demos Section */
 .project-demos {
-  margin-top: 50px;
-  padding-top: 40px;
-  border-top: 2px solid #e0e0e0;
+  margin-top: 48px;
+  padding-top: 36px;
+  border-top: 1px solid #eef1f5;
 }
 
 .demo-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 40px;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 36px;
 }
 
 .demo-item h4 {
-  font-size: 1.2rem;
-  color: #0B3D91;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1.1rem;
+  color: #1a1a2e;
   margin-bottom: 10px;
   font-weight: 600;
 }
 
 .demo-description {
-  font-size: 0.95rem;
-  color: #555;
-  line-height: 1.6;
-  margin-bottom: 15px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.92rem;
+  color: #6b7280;
+  line-height: 1.65;
+  margin-bottom: 16px;
 }
 
 .video-wrapper {
-  background: #f5f5f5;
-  padding: 15px;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  background: #f1f3f7;
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #e8ecf0;
 }
 
-.video-wrapper video {
+.video-wrapper video,
+.video-wrapper iframe {
   width: 100%;
   height: auto;
-  border-radius: 6px;
+  min-height: 280px;
+  border-radius: 4px;
   display: block;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
 /* Responsive Design */
 @media (max-width: 1024px) {
   .project-card {
-    padding: 40px 45px;
+    padding: 40px 40px;
+    margin: 40px 20px;
   }
 
   .project-layout {
     flex-direction: column;
+    gap: 32px;
   }
 
   .project-text,
@@ -181,34 +257,43 @@
     width: 100%;
   }
 
+  .project-visual {
+    position: static;
+  }
+
   .demo-grid {
     grid-template-columns: 1fr;
-    gap: 30px;
+    gap: 28px;
   }
 
   .nasa-logo {
-    width: 300px;
+    width: 280px;
   }
 }
 
 @media (max-width: 768px) {
   .project-card {
-    padding: 30px 30px;
+    padding: 28px 24px;
+    margin: 28px 12px;
   }
 
   .project-content h2 {
-    font-size: 1.5rem;
+    font-size: 1.45rem;
   }
 
   .nasa-logo {
-    width: 250px;
+    width: 220px;
   }
 
   .project-layout {
-    gap: 30px;
+    gap: 24px;
   }
 
   .video-wrapper {
-    padding: 10px;
+    padding: 8px;
+  }
+
+  .demo-grid {
+    grid-template-columns: 1fr;
   }
 }
