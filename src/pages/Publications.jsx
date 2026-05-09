@@ -26,7 +26,7 @@ const Publications = () => {
             </div>
 
             <div className="pub-visual">
-              <img src={`${process.env.PUBLIC_URL}/pictures/sample_transfer_arm.jpg`} alt="Mars Sample Return Mission Sample Transfer Arm" />
+              <img src={`${process.env.PUBLIC_URL}/pictures/actuator_model/sample_transfer_arm.jpg`} alt="Mars Sample Return Mission Sample Transfer Arm" />
               <p className="caption">Mars Sample Return Mission - Sample Transfer Arm</p>
             </div>
           </div>
