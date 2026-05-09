@@ -18,7 +18,7 @@ const Resume = () => {
             <p className="resume-subtitle">Robotics Technologist · NASA JPL</p>
           </div>
           <a
-            href="/docs/Preston_Rogers_Resume.pdf"
+            href={`${process.env.PUBLIC_URL}/docs/Preston_Rogers_Resume.pdf`}
             download="Preston_Rogers_Resume.pdf"
             className="resume-download-button"
           >
@@ -29,7 +29,7 @@ const Resume = () => {
         {/* PDF Preview Section */}
         <div className="resume-preview-container">
           <iframe
-            src="/docs/Preston_Rogers_Resume.pdf#view=FitH"
+            src={`${process.env.PUBLIC_URL}/docs/Preston_Rogers_Resume.pdf#view=FitH`}
             width="100%"
             height="100%"
             title="Preston Rogers Résumé"
