@@ -58,7 +58,7 @@ const Publications = () => {
             </div>
 
             <div className="pub-visual">
-              <img src={`${process.env.PUBLIC_URL}/pictures/superlimbs_fig7_design_prototype.png`} alt="SuperLimbs Design and Prototype" />
+              <img src={`${process.env.PUBLIC_URL}/pictures/superlimbs/superlimbs_fig7_design_prototype.png`} alt="SuperLimbs Design and Prototype" />
               <p className="caption">CAD design and physical prototype testing</p>
             </div>
           </div>
