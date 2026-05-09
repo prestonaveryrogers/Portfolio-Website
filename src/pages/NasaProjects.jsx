@@ -42,7 +42,7 @@ const NasaProjects = () => {
             </div>
 
             <div className="project-visual">
-              <img src={`${process.env.PUBLIC_URL}/pictures/tnet_testbed_real.jpg`} alt="Real-Time Control Testbed" />
+              <img src={`${process.env.PUBLIC_URL}/pictures/high_speed_control/tnet_testbed_real.jpg`} alt="Real-Time Control Testbed" />
               <p className="image-caption">Experimental testbed hardware setup</p>
             </div>
           </div>
@@ -70,7 +70,7 @@ const NasaProjects = () => {
                 </p>
                 <div className="video-wrapper">
                   <video controls>
-                    <source src={`${process.env.PUBLIC_URL}/videos/high_speed_leds-demonstration.mov`} type="video/quicktime" />
+                    <source src={`${process.env.PUBLIC_URL}/videos/high_speed_leds-demonstration.mp4`} type="video/mp4" />
                     Your browser does not support the video tag.
                   </video>
                 </div>
@@ -136,7 +136,7 @@ const NasaProjects = () => {
                 </p>
                 <div className="video-wrapper">
                   <video controls>
-                    <source src={`${process.env.PUBLIC_URL}/videos/actuator_model/aelg_model.mov`} type="video/quicktime" />
+                    <source src={`${process.env.PUBLIC_URL}/videos/actuator_model/aelg_model.mp4`} type="video/mp4" />
                     Your browser does not support the video tag.
                   </video>
                 </div>
