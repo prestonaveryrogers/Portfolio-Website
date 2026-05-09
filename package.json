@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "A personal portfolio website built with React.",
   "main": "src/main.jsx",
-  "homepage": "https://prestonaveryrogers.github.io/Portfolio-Website",
+  "homepage": "https://prestonarogers.com",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
