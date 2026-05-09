@@ -14,7 +14,7 @@ const Navbar = () => {
     >
       <div className="navbar-photo-container">
         <img
-            src={`${process.env.PUBLIC_URL}/pictures/hole_in_the_wall.jpg`}
+            src={`${process.env.PUBLIC_URL}/pictures/waco_pic.jpeg`}
             alt="My Photo"
             className="navbar-photo"
         />
