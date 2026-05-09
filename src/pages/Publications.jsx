@@ -26,12 +26,12 @@ const Publications = () => {
             </div>
 
             <div className="pub-visual">
-              <img src="/pictures/sample_transfer_arm.jpg" alt="Mars Sample Return Mission Sample Transfer Arm" />
+              <img src={`${process.env.PUBLIC_URL}/pictures/sample_transfer_arm.jpg`} alt="Mars Sample Return Mission Sample Transfer Arm" />
               <p className="caption">Mars Sample Return Mission - Sample Transfer Arm</p>
             </div>
           </div>
 
-          <a href="/docs/A_High_Fidelity_Actuator_Model_for_Robotic_Autonomy_in_Space_and_Beyond.pdf" target="_blank" rel="noopener noreferrer" className="pub-button">
+          <a href={`${process.env.PUBLIC_URL}/docs/A_High_Fidelity_Actuator_Model_for_Robotic_Autonomy_in_Space_and_Beyond.pdf`} target="_blank" rel="noopener noreferrer" className="pub-button">
             View Publication →
           </a>
         </div>
@@ -58,12 +58,12 @@ const Publications = () => {
             </div>
 
             <div className="pub-visual">
-              <img src="/pictures/superlimbs_fig7_design_prototype.png" alt="SuperLimbs Design and Prototype" />
+              <img src={`${process.env.PUBLIC_URL}/pictures/superlimbs_fig7_design_prototype.png`} alt="SuperLimbs Design and Prototype" />
               <p className="caption">CAD design and physical prototype testing</p>
             </div>
           </div>
 
-          <a href="/docs/ballesteros-et-al-2026-design-of-supernumerary-robotic-limbs-for-the-augmentation-of-astronauts-performing-partial.pdf" target="_blank" rel="noopener noreferrer" className="pub-button">
+          <a href={`${process.env.PUBLIC_URL}/docs/ballesteros-et-al-2026-design-of-supernumerary-robotic-limbs-for-the-augmentation-of-astronauts-performing-partial.pdf`} target="_blank" rel="noopener noreferrer" className="pub-button">
             View Publication →
           </a>
         </div>

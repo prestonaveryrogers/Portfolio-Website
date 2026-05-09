@@ -5,7 +5,7 @@ const NasaProjects = () => {
   return (
     <div className="nasa-projects-page">
       <header className="nasa-header">
-        <img src="/pictures/nasa_projects_logo.png" className="nasa-logo" alt="NASA Projects" />
+        <img src={`${process.env.PUBLIC_URL}/pictures/nasa_projects_logo.png`} className="nasa-logo" alt="NASA Projects" />
       </header>
 
       {/* High-Frequency Real-Time Control Project */}
@@ -42,7 +42,7 @@ const NasaProjects = () => {
             </div>
 
             <div className="project-visual">
-              <img src="/pictures/tnet_testbed_real.jpg" alt="Real-Time Control Testbed" />
+              <img src={`${process.env.PUBLIC_URL}/pictures/tnet_testbed_real.jpg`} alt="Real-Time Control Testbed" />
               <p className="image-caption">Experimental testbed hardware setup</p>
             </div>
           </div>
@@ -57,7 +57,7 @@ const NasaProjects = () => {
                 </p>
                 <div className="video-wrapper">
                   <video controls>
-                    <source src="/videos/high_speed_leds_precise_2_0-002x_first30s.mp4" type="video/mp4" />
+                    <source src={`${process.env.PUBLIC_URL}/videos/high_speed_leds_precise_2_0-002x_first30s.mp4`} type="video/mp4" />
                     Your browser does not support the video tag.
                   </video>
                 </div>
@@ -70,7 +70,7 @@ const NasaProjects = () => {
                 </p>
                 <div className="video-wrapper">
                   <video controls>
-                    <source src="/videos/high_speed_leds-demonstration.mov" type="video/quicktime" />
+                    <source src={`${process.env.PUBLIC_URL}/videos/high_speed_leds-demonstration.mov`} type="video/quicktime" />
                     Your browser does not support the video tag.
                   </video>
                 </div>
@@ -121,7 +121,7 @@ const NasaProjects = () => {
             </div>
 
             <div className="project-visual">
-              <img src="/pictures/actuator_model/model_high_level_usage.png" alt="Actuator model integration in the robot arm V&V pipeline" />
+              <img src={`${process.env.PUBLIC_URL}/pictures/actuator_model/model_high_level_usage.png`} alt="Actuator model integration in the robot arm V&V pipeline" />
               <p className="image-caption">The actuator model within the larger robot arm simulation — desired joint trajectories go in, realistic actuator behavior comes out, allowing engineers to verify motion feasibility before execution on Mars</p>
             </div>
           </div>
@@ -136,7 +136,7 @@ const NasaProjects = () => {
                 </p>
                 <div className="video-wrapper">
                   <video controls>
-                    <source src="/videos/actuator_model/aelg_model.mov" type="video/quicktime" />
+                    <source src={`${process.env.PUBLIC_URL}/videos/actuator_model/aelg_model.mov`} type="video/quicktime" />
                     Your browser does not support the video tag.
                   </video>
                 </div>
@@ -185,7 +185,7 @@ const NasaProjects = () => {
             </div>
 
             <div className="project-visual">
-              <img src="/pictures/superlimbs/superlimbs_team_photo.png" alt="The B-Team: Erik Ballesteros, Preston Rogers, and Kalind Carpenter with the SuperLimbs prototype" />
+              <img src={`${process.env.PUBLIC_URL}/pictures/superlimbs/superlimbs_team_photo.png`} alt="The B-Team: Erik Ballesteros, Preston Rogers, and Kalind Carpenter with the SuperLimbs prototype" />
               <p className="image-caption">The "B-Team" — Erik Ballesteros, Preston Rogers, and Kalind Carpenter with the SuperLimbs-T1.0 prototype</p>
             </div>
           </div>
@@ -260,11 +260,11 @@ const NasaProjects = () => {
             </div>
 
             <div className="project-visual">
-              <img src="/pictures/srl_lander_mech_project/bluebox_exterior.png" alt="JPL BlueBox — standardized avionics box for actuator testing" />
+              <img src={`${process.env.PUBLIC_URL}/pictures/srl_lander_mech_project/bluebox_exterior.png`} alt="JPL BlueBox — standardized avionics box for actuator testing" />
               <p className="image-caption">The BlueBox: JPL's standardized EtherCAT avionics system containing Elmo controllers, Beckhoff I/O, and power distribution</p>
-              <img src="/pictures/srl_lander_mech_project/bluebox_internals.png" alt="BlueBox internals showing Motor Channel PCBs, Distribution PCB, Beckhoff modules, and Elmo controllers" style={{ marginTop: '20px' }} />
+              <img src={`${process.env.PUBLIC_URL}/pictures/srl_lander_mech_project/bluebox_internals.png`} alt="BlueBox internals showing Motor Channel PCBs, Distribution PCB, Beckhoff modules, and Elmo controllers" style={{ marginTop: '20px' }} />
               <p className="image-caption">BlueBox internals — Motor Channel PCBs, Distribution PCB, Beckhoff modules, and ELMO controllers</p>
-              <img src="/pictures/srl_lander_mech_project/three_node_thermal_model_telemetry.jpg" alt="PlotJuggler telemetry showing commanded current and three-node thermal model temperatures" style={{ marginTop: '20px' }} />
+              <img src={`${process.env.PUBLIC_URL}/pictures/srl_lander_mech_project/three_node_thermal_model_telemetry.jpg`} alt="PlotJuggler telemetry showing commanded current and three-node thermal model temperatures" style={{ marginTop: '20px' }} />
               <p className="image-caption">PlotJuggler telemetry: commanded current (top) and three-node thermal model temperatures rising during motor operation (bottom)</p>
             </div>
           </div>

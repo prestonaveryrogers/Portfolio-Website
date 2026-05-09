@@ -7,14 +7,14 @@ const Navbar = () => {
     <nav
       className="navbar"
       style={{
-        backgroundImage: "url('/pictures/earth_at_night.jpg')",
+        backgroundImage: `url('${process.env.PUBLIC_URL}/pictures/earth_at_night.jpg')`,
         backgroundSize: 'cover',
         backgroundPosition: 'center'
       }}
     >
       <div className="navbar-photo-container">
         <img
-            src="/pictures/hole_in_the_wall.jpg" 
+            src={`${process.env.PUBLIC_URL}/pictures/hole_in_the_wall.jpg`}
             alt="My Photo"
             className="navbar-photo"
         />

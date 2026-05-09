@@ -29,7 +29,7 @@ const AboutMe = () => {
             </div>
             <div className="story-visual">
               <img
-                src="/pictures/waterborne_skating.gif"
+                src={`${process.env.PUBLIC_URL}/pictures/waterborne_skating.gif`}
                 alt="Waterborne skateboarding in action"
               />
               <p className="image-caption">Waterborne Skateboards in action</p>

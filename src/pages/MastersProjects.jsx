@@ -5,7 +5,7 @@ const MastersProjects = () => {
   return (
     <div>
       <header className="masters-header">
-        <img src="/pictures/masters_projects_logo.png" className="masters-logo" alt="Master's Projects" />
+        <img src={`${process.env.PUBLIC_URL}/pictures/masters_projects_logo.png`} className="masters-logo" alt="Master's Projects" />
       </header>
 
       {/* Convex Heuristics Project */}
@@ -30,12 +30,12 @@ const MastersProjects = () => {
             </div>
 
             <div className="project-visual">
-              <img src="/pictures/convex_heuristics.png" alt="Convex Heuristics Visualization" />
+              <img src={`${process.env.PUBLIC_URL}/pictures/convex_heuristics.png`} alt="Convex Heuristics Visualization" />
               <p className="image-caption">Simulated robotic agent navigating obstacle field using convex optimization for path planning</p>
             </div>
           </div>
 
-          <a href="/docs/Convex_Heuristics_Paper.pdf" target="_blank" rel="noopener noreferrer" className="project-button">
+          <a href={`${process.env.PUBLIC_URL}/docs/Convex_Heuristics_Paper.pdf`} target="_blank" rel="noopener noreferrer" className="project-button">
             Read Full Paper →
           </a>
         </div>
@@ -63,12 +63,12 @@ const MastersProjects = () => {
             </div>
 
             <div className="project-visual">
-              <img src="/pictures/robot_arm_ml.png" alt="EEG-based Robot Control" />
+              <img src={`${process.env.PUBLIC_URL}/pictures/robot_arm_ml.png`} alt="EEG-based Robot Control" />
               <p className="image-caption">EMG signal classification for robotic arm control (K-means clustering visualization)</p>
             </div>
           </div>
 
-          <a href="/docs/Robot_Arm_Paper.pdf" target="_blank" rel="noopener noreferrer" className="project-button">
+          <a href={`${process.env.PUBLIC_URL}/docs/Robot_Arm_Paper.pdf`} target="_blank" rel="noopener noreferrer" className="project-button">
             Read Full Paper →
           </a>
         </div>
@@ -97,12 +97,12 @@ const MastersProjects = () => {
             </div>
 
             <div className="project-visual">
-              <img src="/pictures/neural_network_copycat.png" alt="Neural Network MPC Architecture" />
+              <img src={`${process.env.PUBLIC_URL}/pictures/neural_network_copycat.png`} alt="Neural Network MPC Architecture" />
               <p className="image-caption">MPC-guided trajectory planning for autonomous navigation with out-of-distribution detection</p>
             </div>
           </div>
 
-          <a href="/docs/Neural_Network_Copycat_Paper.pdf" target="_blank" rel="noopener noreferrer" className="project-button">
+          <a href={`${process.env.PUBLIC_URL}/docs/Neural_Network_Copycat_Paper.pdf`} target="_blank" rel="noopener noreferrer" className="project-button">
             Read Full Paper →
           </a>
         </div>
