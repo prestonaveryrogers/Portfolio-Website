@@ -37,11 +37,11 @@ const AboutMe = () => {
           </div>
 
           <p>
-            After graduating from Stanford, I joined <strong>Dexterity AI</strong>, where I automated repetitive tasks to free up people to do what they do best — be creative human beings. This work reinforced my belief that the best technology doesn't replace humans; it amplifies what makes us human.
+            After graduating from Stanford, I joined <strong>Dexterity AI</strong>, where I automated repetitive tasks to free up people to do what they do best — be creative human beings. 
           </p>
 
           <p>
-            Now, at <strong>NASA's Jet Propulsion Laboratory</strong>, I work on robotics for space exploration. From developing high-fidelity actuator models for the Mars Sample Return mission to exploring wearable robotic systems for lunar EVAs, I strive to see how far our creativity will take us — both on Earth and beyond.
+            Now, at <strong>NASA's Jet Propulsion Laboratory</strong>, I strive to see how far our creativity will take us.
           </p>
         </section>
 
