@@ -10,7 +10,7 @@ const NasaProjects = () => {
       </header>
 
       {/* High-Frequency Real-Time Control Project */}
-      <div className="project-card">
+      <div className="nasa-project-card">
         <div className="project-content">
           <h2>High-Frequency Real-Time Control for Space Robotics</h2>
           <p className="project-meta">Real-Time Systems · Embedded Control · NASA JPL</p>
@@ -87,7 +87,7 @@ const NasaProjects = () => {
       </div>
 
       {/* High-Fidelity Actuator Model Project */}
-      <div className="project-card">
+      <div className="nasa-project-card">
         <div className="project-content">
           <h2>High-Fidelity Actuator Model for Robotic Autonomy in Space</h2>
           <p className="project-meta">MATLAB Simulink · Modeling & Simulation · NASA JPL · Mars Sample Return</p>
@@ -157,7 +157,7 @@ const NasaProjects = () => {
       </div>
 
       {/* SuperLimbs Project */}
-      <div className="project-card">
+      <div className="nasa-project-card">
         <div className="project-content">
           <h2>SuperLimbs: Supernumerary Robotic Limbs for Astronaut Augmentation</h2>
           <p className="project-meta">Robotics · ROS2 · EtherCAT · NASA JPL · Artemis</p>
@@ -231,7 +231,7 @@ const NasaProjects = () => {
       </div>
 
       {/* SRL Lander Mechanical — BlueBox Actuator Testing */}
-      <div className="project-card">
+      <div className="nasa-project-card">
         <div className="project-content">
           <h2>SRL Lander Mechanical: BlueBox Actuator Test Software</h2>
           <p className="project-meta">ROS2 · EtherCAT · Fastcat · JSD · NASA JPL · Mars Sample Return</p>
