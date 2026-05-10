@@ -112,9 +112,6 @@ const AboutMe = () => {
         </section>
 
       </div>
-
-      {/* Red bar */}
-      <div className="red-bar"></div>
     </div>
   );
 };
