@@ -157,7 +157,7 @@
   .hamburger {
     display: none;
     position: fixed;
-    top: 20px;
+    bottom: 20px;
     left: 20px;
     z-index: 1001;
     background: rgba(11, 61, 145, 0.9);

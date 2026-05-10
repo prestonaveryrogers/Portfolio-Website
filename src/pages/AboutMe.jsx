@@ -1,4 +1,5 @@
 import React from 'react';
+import ImageLightbox from '../components/ImageLightbox';
 import '../styles/AboutMe.css';
 
 const AboutMe = () => {
@@ -28,9 +29,10 @@ const AboutMe = () => {
               </p>
             </div>
             <div className="story-visual">
-              <img
+              <ImageLightbox
                 src={`${process.env.PUBLIC_URL}/pictures/waterborne_skating.gif`}
                 alt="Waterborne skateboarding in action"
+                caption="Waterborne Skateboards in action"
               />
               <p className="image-caption">Waterborne Skateboards in action</p>
             </div>

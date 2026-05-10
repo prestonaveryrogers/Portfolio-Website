@@ -1,4 +1,5 @@
 import React from "react";
+import ImageLightbox from '../components/ImageLightbox';
 import '../styles/NasaProjects.css';
 
 const NasaProjects = () => {
@@ -42,7 +43,11 @@ const NasaProjects = () => {
             </div>
 
             <div className="project-visual">
-              <img src={`${process.env.PUBLIC_URL}/pictures/high_speed_control/tnet_testbed_real.jpg`} alt="Real-Time Control Testbed" />
+              <ImageLightbox
+                src={`${process.env.PUBLIC_URL}/pictures/high_speed_control/tnet_testbed_real.jpg`}
+                alt="Real-Time Control Testbed"
+                caption="Experimental testbed hardware setup"
+              />
               <p className="image-caption">Experimental testbed hardware setup</p>
             </div>
           </div>
@@ -121,7 +126,11 @@ const NasaProjects = () => {
             </div>
 
             <div className="project-visual">
-              <img src={`${process.env.PUBLIC_URL}/pictures/actuator_model/model_high_level_usage.png`} alt="Actuator model integration in the robot arm V&V pipeline" />
+              <ImageLightbox
+                src={`${process.env.PUBLIC_URL}/pictures/actuator_model/model_high_level_usage.png`}
+                alt="Actuator model integration in the robot arm V&V pipeline"
+                caption="The actuator model within the larger robot arm simulation — desired joint trajectories go in, realistic actuator behavior comes out, allowing engineers to verify motion feasibility before execution on Mars"
+              />
               <p className="image-caption">The actuator model within the larger robot arm simulation — desired joint trajectories go in, realistic actuator behavior comes out, allowing engineers to verify motion feasibility before execution on Mars</p>
             </div>
           </div>
@@ -185,7 +194,11 @@ const NasaProjects = () => {
             </div>
 
             <div className="project-visual">
-              <img src={`${process.env.PUBLIC_URL}/pictures/superlimbs/superlimbs_team_photo.png`} alt="The B-Team: Erik Ballesteros, Preston Rogers, and Kalind Carpenter with the SuperLimbs prototype" />
+              <ImageLightbox
+                src={`${process.env.PUBLIC_URL}/pictures/superlimbs/superlimbs_team_photo.png`}
+                alt="The B-Team: Erik Ballesteros, Preston Rogers, and Kalind Carpenter with the SuperLimbs prototype"
+                caption="The 'B-Team' — Erik Ballesteros, Preston Rogers, and Kalind Carpenter with the SuperLimbs-T1.0 prototype"
+              />
               <p className="image-caption">The "B-Team" — Erik Ballesteros, Preston Rogers, and Kalind Carpenter with the SuperLimbs-T1.0 prototype</p>
             </div>
           </div>
@@ -260,11 +273,25 @@ const NasaProjects = () => {
             </div>
 
             <div className="project-visual">
-              <img src={`${process.env.PUBLIC_URL}/pictures/srl_lander_mech_project/bluebox_exterior.png`} alt="JPL BlueBox — standardized avionics box for actuator testing" />
+              <ImageLightbox
+                src={`${process.env.PUBLIC_URL}/pictures/srl_lander_mech_project/bluebox_exterior.png`}
+                alt="JPL BlueBox — standardized avionics box for actuator testing"
+                caption="The BlueBox: JPL's standardized EtherCAT avionics system containing Elmo controllers, Beckhoff I/O, and power distribution"
+              />
               <p className="image-caption">The BlueBox: JPL's standardized EtherCAT avionics system containing Elmo controllers, Beckhoff I/O, and power distribution</p>
-              <img src={`${process.env.PUBLIC_URL}/pictures/srl_lander_mech_project/bluebox_internals.png`} alt="BlueBox internals showing Motor Channel PCBs, Distribution PCB, Beckhoff modules, and Elmo controllers" style={{ marginTop: '20px' }} />
+              <ImageLightbox
+                src={`${process.env.PUBLIC_URL}/pictures/srl_lander_mech_project/bluebox_internals.png`}
+                alt="BlueBox internals showing Motor Channel PCBs, Distribution PCB, Beckhoff modules, and Elmo controllers"
+                caption="BlueBox internals — Motor Channel PCBs, Distribution PCB, Beckhoff modules, and ELMO controllers"
+                style={{ marginTop: '20px' }}
+              />
               <p className="image-caption">BlueBox internals — Motor Channel PCBs, Distribution PCB, Beckhoff modules, and ELMO controllers</p>
-              <img src={`${process.env.PUBLIC_URL}/pictures/srl_lander_mech_project/three_node_thermal_model_telemetry.jpg`} alt="PlotJuggler telemetry showing commanded current and three-node thermal model temperatures" style={{ marginTop: '20px' }} />
+              <ImageLightbox
+                src={`${process.env.PUBLIC_URL}/pictures/srl_lander_mech_project/three_node_thermal_model_telemetry.jpg`}
+                alt="PlotJuggler telemetry showing commanded current and three-node thermal model temperatures"
+                caption="PlotJuggler telemetry showing commanded current and three-node thermal model temperatures"
+                style={{ marginTop: '20px' }}
+              />
               <p className="image-caption">PlotJuggler telemetry: commanded current (top) and three-node thermal model temperatures rising during motor operation (bottom)</p>
             </div>
           </div>

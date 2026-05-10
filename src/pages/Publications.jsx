@@ -1,4 +1,5 @@
 import React from "react";
+import ImageLightbox from '../components/ImageLightbox';
 import '../styles/Publications.css';
 
 const Publications = () => {
@@ -26,7 +27,11 @@ const Publications = () => {
             </div>
 
             <div className="pub-visual">
-              <img src={`${process.env.PUBLIC_URL}/pictures/actuator_model/sample_transfer_arm.jpg`} alt="Mars Sample Return Mission Sample Transfer Arm" />
+              <ImageLightbox
+                src={`${process.env.PUBLIC_URL}/pictures/actuator_model/sample_transfer_arm.jpg`}
+                alt="Mars Sample Return Mission Sample Transfer Arm"
+                caption="Mars Sample Return Mission - Sample Transfer Arm"
+              />
               <p className="caption">Mars Sample Return Mission - Sample Transfer Arm</p>
             </div>
           </div>
@@ -58,7 +63,11 @@ const Publications = () => {
             </div>
 
             <div className="pub-visual">
-              <img src={`${process.env.PUBLIC_URL}/pictures/superlimbs/superlimbs_fig7_design_prototype.png`} alt="SuperLimbs Design and Prototype" />
+              <ImageLightbox
+                src={`${process.env.PUBLIC_URL}/pictures/superlimbs/superlimbs_fig7_design_prototype.png`}
+                alt="SuperLimbs Design and Prototype"
+                caption="CAD design and physical prototype testing"
+              />
               <p className="caption">CAD design and physical prototype testing</p>
             </div>
           </div>

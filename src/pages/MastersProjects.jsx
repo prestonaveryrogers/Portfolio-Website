@@ -1,4 +1,5 @@
 import React from "react";
+import ImageLightbox from '../components/ImageLightbox';
 import '../styles/MastersProjects.css';
 
 const MastersProjects = () => {
@@ -30,7 +31,11 @@ const MastersProjects = () => {
             </div>
 
             <div className="project-visual">
-              <img src={`${process.env.PUBLIC_URL}/pictures/convex_heuristics.png`} alt="Convex Heuristics Visualization" />
+              <ImageLightbox
+                src={`${process.env.PUBLIC_URL}/pictures/convex_heuristics.png`}
+                alt="Convex Heuristics Visualization"
+                caption="Simulated robotic agent navigating obstacle field using convex optimization for path planning"
+              />
               <p className="image-caption">Simulated robotic agent navigating obstacle field using convex optimization for path planning</p>
             </div>
           </div>
@@ -63,7 +68,11 @@ const MastersProjects = () => {
             </div>
 
             <div className="project-visual">
-              <img src={`${process.env.PUBLIC_URL}/pictures/robot_arm_ml.png`} alt="EEG-based Robot Control" />
+              <ImageLightbox
+                src={`${process.env.PUBLIC_URL}/pictures/robot_arm_ml.png`}
+                alt="EEG-based Robot Control"
+                caption="EMG signal classification for robotic arm control (K-means clustering visualization)"
+              />
               <p className="image-caption">EMG signal classification for robotic arm control (K-means clustering visualization)</p>
             </div>
           </div>
@@ -97,7 +106,11 @@ const MastersProjects = () => {
             </div>
 
             <div className="project-visual">
-              <img src={`${process.env.PUBLIC_URL}/pictures/neural_network_copycat.png`} alt="Neural Network MPC Architecture" />
+              <ImageLightbox
+                src={`${process.env.PUBLIC_URL}/pictures/neural_network_copycat.png`}
+                alt="Neural Network MPC Architecture"
+                caption="MPC-guided trajectory planning for autonomous navigation with out-of-distribution detection"
+              />
               <p className="image-caption">MPC-guided trajectory planning for autonomous navigation with out-of-distribution detection</p>
             </div>
           </div>
