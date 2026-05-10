@@ -1,27 +1,31 @@
 import React, { useState } from 'react';
 import '../styles/ImageLightbox.css';
 
-const ImageLightbox = ({ src, alt, className, caption }) => {
+const ImageLightbox = ({ src, alt, className = '', caption, style = {} }) => {
   const [isOpen, setIsOpen] = useState(false);
 
-  const openLightbox = () => {
+  const openLightbox = (e) => {
+    e.preventDefault();
     setIsOpen(true);
     document.body.style.overflow = 'hidden'; // Prevent scrolling when lightbox is open
   };
 
-  const closeLightbox = () => {
+  const closeLightbox = (e) => {
+    e.preventDefault();
     setIsOpen(false);
     document.body.style.overflow = 'auto'; // Re-enable scrolling
   };
+
+  const thumbnailClassName = className ? `${className} lightbox-thumbnail` : 'lightbox-thumbnail';
 
   return (
     <>
       <img
         src={src}
         alt={alt}
-        className={`${className} lightbox-thumbnail`}
+        className={thumbnailClassName}
         onClick={openLightbox}
-        style={{ cursor: 'pointer' }}
+        style={{ ...style, cursor: 'pointer' }}
       />
 
       {isOpen && (
