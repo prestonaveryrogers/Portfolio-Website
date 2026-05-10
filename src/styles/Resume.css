@@ -89,6 +89,85 @@
   display: block;
 }
 
+/* Mobile View Section - Hidden on Desktop */
+.resume-mobile-view {
+  display: none;
+}
+
+.mobile-resume-message {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.pdf-icon {
+  margin: 0 auto 20px;
+  display: block;
+  filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.1));
+}
+
+.mobile-resume-message h3 {
+  font-size: 1.5rem;
+  color: #222;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.mobile-resume-message p {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mobile-button-group {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+
+.resume-view-button {
+  display: inline-block;
+  padding: 14px 35px;
+  background-color: #0B3D91;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 1.05rem;
+  transition: all 0.3s ease;
+  border: 2px solid #0B3D91;
+  width: 100%;
+  max-width: 280px;
+  box-shadow: 0 2px 8px rgba(11, 61, 145, 0.2);
+}
+
+.resume-view-button:hover {
+  background-color: #FC3D21;
+  border-color: #FC3D21;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(252, 61, 33, 0.3);
+}
+
+.mobile-download {
+  background-color: white;
+  color: #0B3D91;
+  border: 2px solid #0B3D91;
+  width: 100%;
+  max-width: 280px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.mobile-download:hover {
+  background-color: #0B3D91;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(11, 61, 145, 0.2);
+}
+
 /* Responsive Design */
 @media (max-width: 1000px) {
   .resume-card {
@@ -124,7 +203,46 @@
     font-size: 0.9rem;
   }
 
+  /* Hide PDF preview iframe on mobile */
   .resume-preview-container {
-    height: 800px;
+    display: none;
+  }
+
+  /* Hide desktop download button on mobile */
+  .desktop-download {
+    display: none;
+  }
+
+  /* Show mobile view on mobile */
+  .resume-mobile-view {
+    display: block;
+  }
+
+  .mobile-resume-message h3 {
+    font-size: 1.3rem;
+  }
+
+  .mobile-resume-message p {
+    font-size: 0.95rem;
+  }
+}
+
+/* Extra small phones */
+@media (max-width: 480px) {
+  .resume-card {
+    padding: 20px 15px;
+  }
+
+  .pdf-icon {
+    width: 60px;
+    height: 60px;
+  }
+
+  .mobile-resume-message {
+    padding: 40px 15px;
+  }
+
+  .mobile-resume-message h3 {
+    font-size: 1.2rem;
   }
 }
