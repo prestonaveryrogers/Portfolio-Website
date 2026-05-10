@@ -273,12 +273,13 @@
 
 @media (max-width: 768px) {
   .project-card {
-    padding: 28px 24px;
-    margin: 28px 12px;
+    padding: 24px 20px;
+    margin: 24px 12px;
   }
 
   .project-content h2 {
-    font-size: 1.45rem;
+    font-size: 1.35rem;
+    line-height: 1.3;
   }
 
   .nasa-logo {
@@ -286,14 +287,53 @@
   }
 
   .project-layout {
-    gap: 24px;
+    gap: 20px;
   }
 
   .video-wrapper {
-    padding: 8px;
+    padding: 6px;
+  }
+
+  .video-wrapper video {
+    max-height: 300px;
   }
 
   .demo-grid {
     grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .project-meta {
+    font-size: 0.7rem;
+    letter-spacing: 1px;
+  }
+
+  .demo-description {
+    font-size: 0.9rem;
+  }
+}
+
+/* Extra small phones */
+@media (max-width: 480px) {
+  .nasa-header {
+    padding: 30px 0 15px 0;
+  }
+
+  .nasa-logo {
+    width: 180px;
+  }
+
+  .project-card {
+    padding: 20px 15px;
+    margin: 20px 8px;
+  }
+
+  .project-content h2 {
+    font-size: 1.2rem;
+  }
+
+  .project-button {
+    padding: 10px 20px;
+    font-size: 0.85rem;
   }
 }

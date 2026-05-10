@@ -223,18 +223,55 @@
 
 @media (max-width: 768px) {
   .about-me-hero {
-    height: 350px;
+    height: 250px;
+    background-attachment: scroll;
   }
 
   .about-me-text {
-    font-size: 3rem;
+    font-size: 2.5rem;
+    left: 20px;
+    top: 20px;
   }
 
   .about-me-content {
-    padding: 40px 30px;
+    padding: 30px 20px;
   }
 
   .lead-paragraph {
+    font-size: 1.05rem;
+    line-height: 1.7;
+  }
+
+  .bio-section p {
+    font-size: 1rem;
+    text-align: left;
+  }
+
+  .story-with-image {
+    gap: 20px;
+    margin: 20px 0;
+  }
+
+  .education-section h2,
+  .experience-section h2,
+  .interests-section h2 {
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+  }
+
+  .edu-item h3 {
+    font-size: 1.2rem;
+  }
+
+  .edu-item .degree {
+    font-size: 1rem;
+  }
+
+  .exp-item {
+    padding: 15px;
+  }
+
+  .exp-item h3 {
     font-size: 1.15rem;
   }
 
@@ -245,5 +282,45 @@
 
   .exp-duration {
     margin-top: 4px;
+  }
+
+  .exp-description {
+    font-size: 0.95rem;
+  }
+
+  .interests-section p {
+    font-size: 1rem;
+    text-align: left;
+  }
+
+  .red-bar {
+    height: 60px;
+  }
+}
+
+/* Extra small phones */
+@media (max-width: 480px) {
+  .about-me-hero {
+    height: 200px;
+  }
+
+  .about-me-text {
+    font-size: 2rem;
+    left: 15px;
+    top: 15px;
+  }
+
+  .about-me-content {
+    padding: 20px 15px;
+  }
+
+  .lead-paragraph {
+    font-size: 1rem;
+  }
+
+  .education-section h2,
+  .experience-section h2,
+  .interests-section h2 {
+    font-size: 1.4rem;
   }
 }
