@@ -1,6 +1,7 @@
 import React from "react";
 import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
+import ScrollToTop from "./components/ScrollToTop";
 import AboutMe from "./pages/AboutMe";
 import MastersProjects from "./pages/MastersProjects";
 import NasaProjects from "./pages/NasaProjects";
@@ -10,6 +11,7 @@ import Resume from "./pages/Resume";
 const App = () => {
   return (
     <Router>
+      <ScrollToTop />
       <div className="container">
         <Navbar />
         <div className="content">

@@ -12,15 +12,6 @@
   position: relative;
 }
 
-.nasa-header::after {
-  content: '';
-  display: block;
-  width: 120px;
-  height: 2px;
-  background: linear-gradient(90deg, transparent, #0B3D91, transparent);
-  margin: 24px auto 0;
-}
-
 .nasa-logo {
   width: 360px;
   height: auto;

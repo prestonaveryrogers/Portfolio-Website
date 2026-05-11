@@ -42,7 +42,6 @@ const Navbar = () => {
           />
         </div>
         <h2>Preston Rogers</h2>
-        <div className="navbar-divider"></div>
         <ul>
           <li><Link to="/" className={location.pathname === "/" ? "active" : ""} onClick={closeMenu}>About Me</Link></li>
           <li><Link to="/nasa-projects" className={location.pathname === "/nasa-projects" ? "active" : ""} onClick={closeMenu}>NASA Projects</Link></li>
