@@ -139,7 +139,7 @@
 
 /* Smaller B-Team image - 2/3 size */
 .project-visual.smaller-image img {
-  max-width: 600px;
+  max-width: 400px;
 }
 
 /* Side-by-side layout for multiple images */
