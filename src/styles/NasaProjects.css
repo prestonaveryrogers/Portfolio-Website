@@ -146,6 +146,24 @@
   line-height: 1.4;
 }
 
+/* Smaller B-Team image - 2/3 size */
+.project-visual.smaller-image img {
+  max-width: 600px;
+}
+
+/* Side-by-side layout for multiple images */
+.project-visual.side-by-side {
+  flex-direction: row;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.project-visual.side-by-side img {
+  max-width: calc(50% - 10px);
+  min-width: 300px;
+}
+
 .project-button {
   display: inline-block;
   margin-top: 25px;
@@ -174,7 +192,7 @@
 
 .demo-grid {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr 1fr;
   gap: 30px;
   margin-top: 20px;
 }
@@ -270,7 +288,18 @@
   }
 
   .demo-grid {
+    grid-template-columns: 1fr;
     gap: 20px;
+  }
+
+  /* Stack side-by-side images vertically on mobile */
+  .project-visual.side-by-side {
+    flex-direction: column;
+  }
+
+  .project-visual.side-by-side img {
+    max-width: 100%;
+    min-width: unset;
   }
 }
 

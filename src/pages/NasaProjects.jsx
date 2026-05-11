@@ -193,7 +193,7 @@ const NasaProjects = () => {
               </div>
             </div>
 
-            <div className="project-visual">
+            <div className="project-visual smaller-image">
               <ImageLightbox
                 src={`${process.env.PUBLIC_URL}/pictures/superlimbs/superlimbs_team_photo.png`}
                 alt="The B-Team: Erik Ballesteros, Preston Rogers, and Kalind Carpenter with the SuperLimbs prototype"
@@ -272,25 +272,30 @@ const NasaProjects = () => {
               </div>
             </div>
 
-            <div className="project-visual">
-              <ImageLightbox
-                src={`${process.env.PUBLIC_URL}/pictures/srl_lander_mech_project/bluebox_exterior.png`}
-                alt="JPL BlueBox — standardized avionics box for actuator testing"
-                caption="The BlueBox: JPL's standardized EtherCAT avionics system containing Elmo controllers, Beckhoff I/O, and power distribution"
-              />
-              <p className="image-caption">The BlueBox: JPL's standardized EtherCAT avionics system containing Elmo controllers, Beckhoff I/O, and power distribution</p>
-              <ImageLightbox
-                src={`${process.env.PUBLIC_URL}/pictures/srl_lander_mech_project/bluebox_internals.png`}
-                alt="BlueBox internals showing Motor Channel PCBs, Distribution PCB, Beckhoff modules, and Elmo controllers"
-                caption="BlueBox internals — Motor Channel PCBs, Distribution PCB, Beckhoff modules, and ELMO controllers"
-                style={{ marginTop: '20px' }}
-              />
-              <p className="image-caption">BlueBox internals — Motor Channel PCBs, Distribution PCB, Beckhoff modules, and ELMO controllers</p>
+            <div className="project-visual side-by-side">
+              <div>
+                <ImageLightbox
+                  src={`${process.env.PUBLIC_URL}/pictures/srl_lander_mech_project/bluebox_exterior.png`}
+                  alt="JPL BlueBox — standardized avionics box for actuator testing"
+                  caption="The BlueBox: JPL's standardized EtherCAT avionics system containing Elmo controllers, Beckhoff I/O, and power distribution"
+                />
+                <p className="image-caption">The BlueBox: JPL's standardized EtherCAT avionics system containing Elmo controllers, Beckhoff I/O, and power distribution</p>
+              </div>
+              <div>
+                <ImageLightbox
+                  src={`${process.env.PUBLIC_URL}/pictures/srl_lander_mech_project/bluebox_internals.png`}
+                  alt="BlueBox internals showing Motor Channel PCBs, Distribution PCB, Beckhoff modules, and Elmo controllers"
+                  caption="BlueBox internals — Motor Channel PCBs, Distribution PCB, Beckhoff modules, and ELMO controllers"
+                />
+                <p className="image-caption">BlueBox internals — Motor Channel PCBs, Distribution PCB, Beckhoff modules, and ELMO controllers</p>
+              </div>
+            </div>
+
+            <div className="project-visual" style={{ marginTop: '30px' }}>
               <ImageLightbox
                 src={`${process.env.PUBLIC_URL}/pictures/srl_lander_mech_project/three_node_thermal_model_telemetry.jpg`}
                 alt="PlotJuggler telemetry showing commanded current and three-node thermal model temperatures"
                 caption="PlotJuggler telemetry showing commanded current and three-node thermal model temperatures"
-                style={{ marginTop: '20px' }}
               />
               <p className="image-caption">PlotJuggler telemetry: commanded current (top) and three-node thermal model temperatures rising during motor operation (bottom)</p>
             </div>
