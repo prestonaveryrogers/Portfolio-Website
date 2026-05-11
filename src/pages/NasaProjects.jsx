@@ -297,7 +297,7 @@ const NasaProjects = () => {
               <div className="demo-item">
                 <h4>TYMPO Robot Team</h4>
                 <p className="demo-description">
-                  The robot team — Preston Rogers, Travis Brown, and Clara MacFarland — responsible for the TMS, power systems, and rover motion control software.
+                  The robot team — Preston Rogers, Travis Brown, and Clara MacFarland — responsible for the TMS, rover power systems, and rover motion control software.
                 </p>
                 <ImageLightbox
                   src={`${process.env.PUBLIC_URL}/pictures/tympo/tympo_robot_team.jpeg`}
