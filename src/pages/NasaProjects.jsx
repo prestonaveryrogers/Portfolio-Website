@@ -270,8 +270,8 @@ const NasaProjects = () => {
               <div className="project-highlights">
                 <h3>Testing & Validation:</h3>
                 <ul>
-                  <li>Laboratory demonstration with short-distance rover driving (video below)</li>
-                  <li>Outdoor field test deploying approximately 300 meters of the 1 km tether, validating system performance over extended distances</li>
+                  <li>Outdoor field test at JPL Mesa deploying approximately 300 meters of the 1 km tether, validating system performance over extended distances</li>
+                  <li>Rover powered via high-voltage DC tether during autonomous operation</li>
                   <li>System successfully maintained tension autonomy throughout all test scenarios</li>
                 </ul>
               </div>
@@ -282,27 +282,27 @@ const NasaProjects = () => {
           <div className="project-demos">
             <div className="demo-grid">
               <div className="demo-item">
-                <h4>Laboratory Demonstration</h4>
+                <h4>Mesa Field Test</h4>
                 <p className="demo-description">
-                  TYMPO rover autonomously managing tether tension during laboratory testing. The spool spools in and out in response to rover motion, maintaining constant tension while the level winder ensures even tether placement.
+                  TYMPO rover during outdoor field testing at JPL Mesa with large amount of tether already paid out. The rover is powered via high-voltage DC tether and autonomously manages tension as it traverses the terrain.
                 </p>
                 <div className="video-wrapper">
                   <video controls>
-                    <source src={`${process.env.PUBLIC_URL}/videos/tympo/tympo_driving.mp4`} type="video/mp4" />
+                    <source src={`${process.env.PUBLIC_URL}/videos/tympo/tympo_tms_payout_outdoors.MP4`} type="video/mp4" />
                     Your browser does not support the video tag.
                   </video>
                 </div>
               </div>
 
               <div className="demo-item">
-                <h4>Outdoor Field Test</h4>
+                <h4>TYMPO Robot Team</h4>
                 <p className="demo-description">
-                  TYMPO rover during outdoor field testing — deploying approximately 300 meters of tether to validate autonomous tension control over extended distances.
+                  The robot team — Preston Rogers, Travis Brown, and Clara MacFarland — responsible for the TMS, power systems, and rover motion control software.
                 </p>
                 <ImageLightbox
-                  src={`${process.env.PUBLIC_URL}/pictures/tympo/tympo_sunset.jpeg`}
-                  alt="TYMPO rover during outdoor field test at sunset"
-                  caption="TYMPO rover during outdoor field testing at sunset"
+                  src={`${process.env.PUBLIC_URL}/pictures/tympo/tympo_robot_team.jpeg`}
+                  alt="TYMPO robot team: Preston Rogers, Travis Brown, and Clara MacFarland"
+                  caption="TYMPO robot team — Preston Rogers, Travis Brown, and Clara MacFarland"
                 />
               </div>
             </div>
