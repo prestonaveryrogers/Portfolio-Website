@@ -150,9 +150,15 @@
   flex-wrap: wrap;
 }
 
-.project-visual.side-by-side img {
-  max-width: calc(50% - 10px);
+.project-visual.side-by-side > div {
+  flex: 1;
   min-width: 300px;
+  max-width: calc(50% - 10px);
+}
+
+.project-visual.side-by-side img {
+  width: 100%;
+  height: auto;
 }
 
 .project-button {
@@ -186,6 +192,14 @@
   grid-template-columns: 1fr 1fr;
   gap: 30px;
   margin-top: 20px;
+}
+
+/* Single item demo - centered */
+.demo-grid.single-item {
+  grid-template-columns: 1fr;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .demo-item h4 {

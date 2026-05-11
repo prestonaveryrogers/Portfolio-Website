@@ -137,7 +137,7 @@ const NasaProjects = () => {
 
           {/* Landing Gear Demo */}
           <div className="project-demos">
-            <div className="demo-grid">
+            <div className="demo-grid single-item">
               <div className="demo-item">
                 <h4>Landing Gear Demo — Generalizability Beyond Space Robotics</h4>
                 <p className="demo-description">
@@ -205,7 +205,7 @@ const NasaProjects = () => {
 
           {/* SuperLimbs Video */}
           <div className="project-demos">
-            <div className="demo-grid">
+            <div className="demo-grid single-item">
               <div className="demo-item">
                 <h4>Post-Fall Recovery Demonstration</h4>
                 <p className="demo-description">
