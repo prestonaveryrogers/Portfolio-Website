@@ -230,6 +230,84 @@ const NasaProjects = () => {
         </div>
       </div>
 
+      {/* TYMPO Project */}
+      <div className="nasa-project-card">
+        <div className="project-content">
+          <h2>TYMPO: Tethered Power for Lunar Mobility</h2>
+          <p className="project-meta">ROS2 · Control Systems · CASAH · NASA JPL · Lunar Exploration</p>
+
+          <div className="project-layout">
+            <div className="project-text">
+              <p>
+                TYMPO (Tethered Power Systems for Lunar Mobility and Power Transmission) is a tether-based power transmission system designed to deliver power and communications over distances up to 10 km on the lunar surface. The primary use case: enabling rovers to explore permanently shadowed regions — lunar craters, pits, caves, and lava tubes — where solar power is unavailable. A stationary power source (such as a lander with fission or solar generation) remains in sunlight while the tethered rover ventures into darkness, maintaining power and communication through the tether.
+              </p>
+              <p>
+                I contributed to the prototype rover, specifically developing the Tether Management System (TMS) — the autonomous system that maintains constant tether tension as the rover drives toward or away from the power source.
+              </p>
+
+              <div className="project-highlights">
+                <h3>Tether Management System (TMS):</h3>
+                <p>The TMS autonomously controls tether tension and placement during rover operation:</p>
+                <ul>
+                  <li><strong>Tension Sensing:</strong> A potentiometer-based lever measures real-time tether tension and outputs an analog voltage signal</li>
+                  <li><strong>Active Spooling Control:</strong> A PD controller takes the tension measurement as input and commands the spool actuator velocity (clockwise or counterclockwise) to maintain constant tension — automatically spooling in as the rover approaches the lander, and spooling out as it moves away</li>
+                  <li><strong>Level Winder System:</strong> As the spool rotates, a level winder translates vertically to ensure even tether placement across the spool width, preventing tangles or uneven winding</li>
+                  <li><strong>Real-Time Control Logic:</strong> I wrote the software that synchronizes the level winder position with the spool's angular position, ensuring the level winder responds immediately to spool rotation</li>
+                </ul>
+              </div>
+
+              <div className="project-highlights">
+                <h3>My Contributions:</h3>
+                <ul>
+                  <li><strong>Component Selection:</strong> Specified and integrated hardware to read the analog tension sensor and command the spool and level winder actuators</li>
+                  <li><strong>PD Controller Implementation:</strong> Designed and tuned the proportional-derivative controller that converts tension error into desired spool velocity</li>
+                  <li><strong>Level Winder Synchronization:</strong> Developed the control logic to position the level winder based on real-time spool angular position feedback</li>
+                  <li><strong>CASAH Integration:</strong> Built the system on JPL's CASAH framework (ROS2-based) with user commands for calibration, enabling/disabling the tension controller, and manual override</li>
+                  <li><strong>Telemetry & Visualization:</strong> Configured PlotJuggler to monitor tension sensor readings, commanded vs. achieved spool velocity, and level winder position in real time</li>
+                </ul>
+              </div>
+
+              <div className="project-highlights">
+                <h3>Testing & Validation:</h3>
+                <ul>
+                  <li>Laboratory demonstration with short-distance rover driving (video below)</li>
+                  <li>Outdoor field test deploying approximately 300 meters of the 1 km tether, validating system performance over extended distances</li>
+                  <li>System successfully maintained tension autonomy throughout all test scenarios</li>
+                </ul>
+              </div>
+            </div>
+
+            <div className="project-visual">
+              <ImageLightbox
+                src={`${process.env.PUBLIC_URL}/pictures/tympo/tympo_sunset.jpeg`}
+                alt="TYMPO rover during outdoor field test at sunset"
+                caption="TYMPO rover during outdoor field testing — deploying ~300 meters of tether to validate autonomous tension control over extended distances"
+              />
+              <p className="image-caption">TYMPO rover during outdoor field testing — deploying ~300 meters of tether to validate autonomous tension control over extended distances</p>
+            </div>
+          </div>
+
+          {/* TYMPO Video */}
+          <div className="project-demos">
+            <div className="demo-grid single-item">
+              <div className="demo-item">
+                <h4>Laboratory Demonstration</h4>
+                <p className="demo-description">
+                  TYMPO rover autonomously managing tether tension during laboratory testing. The spool spools in and out in response to rover motion, maintaining constant tension while the level winder ensures even tether placement.
+                </p>
+                <div className="video-wrapper">
+                  <video controls>
+                    <source src={`${process.env.PUBLIC_URL}/videos/tympo/tympo_driving.mp4`} type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
       {/* SRL Lander Mechanical — BlueBox Actuator Testing */}
       <div className="nasa-project-card">
         <div className="project-content">
