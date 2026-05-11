@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.11631ee3.css",
+    "main.css": "/static/css/main.bd3e1117.css",
     "main.js": "/static/js/main.de759e2c.js",
     "static/media/niseko_snowboarding.png": "/static/media/niseko_snowboarding.7f0e17d2aecbd64f7aa6.png",
     "index.html": "/index.html",
-    "main.11631ee3.css.map": "/static/css/main.11631ee3.css.map",
+    "main.bd3e1117.css.map": "/static/css/main.bd3e1117.css.map",
     "main.de759e2c.js.map": "/static/js/main.de759e2c.js.map"
   },
   "entrypoints": [
-    "static/css/main.11631ee3.css",
+    "static/css/main.bd3e1117.css",
     "static/js/main.de759e2c.js"
   ]
 }
