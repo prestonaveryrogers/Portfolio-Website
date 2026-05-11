@@ -71,7 +71,7 @@ const AboutMe = () => {
               <h3>Robotics Technologist</h3>
               <span className="exp-duration">2023 – Present</span>
             </div>
-            <p className="exp-company">NASA Jet Propulsion Laboratory · Pasadena, CA</p>
+            <p className="exp-company">NASA JPL · Pasadena, CA</p>
             <p className="exp-description">
               Developing robotic systems for space exploration missions, including actuator modeling for Mars Sample Return and design optimization for astronaut-assistive wearable robots for lunar operations.
             </p>
