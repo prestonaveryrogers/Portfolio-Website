@@ -62,7 +62,7 @@ const NasaProjects = () => {
                 </p>
                 <div className="video-wrapper">
                   <video controls>
-                    <source src={`${process.env.PUBLIC_URL}/videos/high_speed_leds_precise_2_0-002x_first30s.mp4`} type="video/mp4" />
+                    <source src={`${process.env.PUBLIC_URL}/videos/high_speed_control/high_speed_leds_precise_2_0-002x_first30s.mp4`} type="video/mp4" />
                     Your browser does not support the video tag.
                   </video>
                 </div>
@@ -75,7 +75,7 @@ const NasaProjects = () => {
                 </p>
                 <div className="video-wrapper">
                   <video controls>
-                    <source src={`${process.env.PUBLIC_URL}/videos/high_speed_leds-demonstration.mp4`} type="video/mp4" />
+                    <source src={`${process.env.PUBLIC_URL}/videos/high_speed_control/high_speed_leds-demonstration.mp4`} type="video/mp4" />
                     Your browser does not support the video tag.
                   </video>
                 </div>
@@ -276,20 +276,11 @@ const NasaProjects = () => {
                 </ul>
               </div>
             </div>
-
-            <div className="project-visual">
-              <ImageLightbox
-                src={`${process.env.PUBLIC_URL}/pictures/tympo/tympo_sunset.jpeg`}
-                alt="TYMPO rover during outdoor field test at sunset"
-                caption="TYMPO rover during outdoor field testing — deploying ~300 meters of tether to validate autonomous tension control over extended distances"
-              />
-              <p className="image-caption">TYMPO rover during outdoor field testing — deploying ~300 meters of tether to validate autonomous tension control over extended distances</p>
-            </div>
           </div>
 
-          {/* TYMPO Video */}
+          {/* TYMPO Demonstrations */}
           <div className="project-demos">
-            <div className="demo-grid single-item">
+            <div className="demo-grid">
               <div className="demo-item">
                 <h4>Laboratory Demonstration</h4>
                 <p className="demo-description">
@@ -301,6 +292,18 @@ const NasaProjects = () => {
                     Your browser does not support the video tag.
                   </video>
                 </div>
+              </div>
+
+              <div className="demo-item">
+                <h4>Outdoor Field Test</h4>
+                <p className="demo-description">
+                  TYMPO rover during outdoor field testing — deploying approximately 300 meters of tether to validate autonomous tension control over extended distances.
+                </p>
+                <ImageLightbox
+                  src={`${process.env.PUBLIC_URL}/pictures/tympo/tympo_sunset.jpeg`}
+                  alt="TYMPO rover during outdoor field test at sunset"
+                  caption="TYMPO rover during outdoor field testing at sunset"
+                />
               </div>
             </div>
           </div>
