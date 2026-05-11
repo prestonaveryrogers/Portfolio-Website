@@ -29,7 +29,7 @@ const Resume = () => {
         {/* PDF Preview Section - Desktop Only */}
         <div className="resume-preview-container">
           <iframe
-            src={`${process.env.PUBLIC_URL}/docs/Preston_Rogers_Resume.pdf#view=FitH`}
+            src={`${process.env.PUBLIC_URL}/docs/Preston_Rogers_Resume.pdf#view=FitH&navpanes=0`}
             width="100%"
             height="100%"
             title="Preston Rogers Résumé"
