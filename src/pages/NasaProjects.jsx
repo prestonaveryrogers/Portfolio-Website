@@ -42,7 +42,7 @@ const NasaProjects = () => {
               </div>
             </div>
 
-            <div className="project-visual">
+            <div className="project-visual smaller-image">
               <ImageLightbox
                 src={`${process.env.PUBLIC_URL}/pictures/high_speed_control/tnet_testbed_real.jpg`}
                 alt="Real-Time Control Testbed"
